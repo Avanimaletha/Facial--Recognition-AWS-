@@ -7,7 +7,7 @@ rekognition = boto3.client('rekognition', region_name='ap-south-1')
 dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')  
 employeeTable = dynamodb.Table('employee')  
 
-bucketName = 'your-bucket-name'  # bucket name 
+bucketName = 'your-bucket-name'  # bucket name S3
 
 def lambda_handler(event, context):
     print(event)
