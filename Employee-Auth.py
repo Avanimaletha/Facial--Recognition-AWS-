@@ -2,7 +2,7 @@ import boto3
 import json
 
 s3 = boto3.client('s3')
-rekognition = boto3.client('rekognition', region_name='ap-south-1')
+rekognition = boto3.client ('rekognition', region_name='ap-south-1')
 
 dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')  
 employeeTable = dynamodb.Table('employee')  
